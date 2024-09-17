@@ -40,7 +40,7 @@ This project is an assignment for the Flutter internship interview. The task inv
 
 <div style="text-align: center;">
   <h3>Portfolio Page Screenshot</h3>
-  <img src="assets/images/portfolio.png" alt="Portfolio Page Screenshot" style="max-width: 40%; height: auto; border: 1px solid #ccc;">
+  <img src="assets/images/portfolio.png" alt="Portfolio Page Screenshot" style="max-width: 20%; height: auto; border: 1px solid #ccc;">
 </div>
 
 
