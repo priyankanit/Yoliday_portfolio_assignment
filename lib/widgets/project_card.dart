@@ -14,10 +14,10 @@ class ProjectCard extends StatelessWidget {
       itemBuilder: (context, index) {
         final project = projects[index];
         return Card(
-          margin: const EdgeInsets.all(8.0).r,
+          margin: EdgeInsets.all(8.0.r),
           elevation: 0,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0),
+            borderRadius: BorderRadius.circular(10.0.r),
             side: BorderSide(
               color: const Color(0xFFE0E0E0),
               width: 1.0.w,
@@ -29,21 +29,20 @@ class ProjectCard extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                    topLeft: const Radius.circular(20.0).r, 
-                    bottomLeft: const Radius.circular(20.0).r
-                    ),
-                    ),
-                width: MediaQuery.of(context).size.width * 0.3.w,
-                height: MediaQuery.of(context).size.height * 0.14.h,
+                    topLeft: Radius.circular(16.0.r),
+                    bottomLeft: Radius.circular(16.0.r),
+                  ),
+                ),
+                width: 0.3.sw, 
+                height: 0.14.sh, 
                 child: Image.asset(
                   project.image,
                   fit: BoxFit.cover,
                 ),
               ),
-
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: EdgeInsets.all(10.0.r), 
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -58,8 +57,7 @@ class ProjectCard extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                         maxLines: 2,
                       ),
-                       SizedBox(height: 8.h),
-                      
+                      SizedBox(height: 8.h), 
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -70,17 +68,17 @@ class ProjectCard extends StatelessWidget {
                                 Text(
                                   project.author,
                                   style: TextStyle(
-                                    fontSize: 10.sp,
+                                    fontSize: 10.sp, 
                                   ),
                                   overflow: TextOverflow.ellipsis,
                                   maxLines: 1,
                                 ),
-                                SizedBox(height: 2.h),
+                                SizedBox(height: 2.h), 
                                 Text(
                                   project.text,
                                   style: TextStyle(
                                     fontFamily: 'Roboto',
-                                    fontSize: 10.sp,
+                                    fontSize: 10.sp, 
                                     color: Colors.grey.shade600,
                                   ),
                                   overflow: TextOverflow.ellipsis,
@@ -89,9 +87,10 @@ class ProjectCard extends StatelessWidget {
                               ],
                             ),
                           ),
+                          SizedBox(width: 8.w), 
                           Container(
-                            height: 30.h,
-                            width: 55.w,
+                            height: 30.h, 
+                            width: 55.w, 
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [
@@ -99,20 +98,23 @@ class ProjectCard extends StatelessWidget {
                                   Colors.orange.shade200,
                                 ],
                               ),
-                              borderRadius: BorderRadius.circular(8.0).r,
+                              borderRadius: BorderRadius.circular(8.0.r), 
                             ),
                             child: ElevatedButton(
                               onPressed: () {},
                               style: ElevatedButton.styleFrom(
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8.0).r,
+                                  borderRadius: BorderRadius.circular(8.0.r),
                                 ),
                                 backgroundColor: Colors.transparent,
                                 shadowColor: Colors.transparent,
                               ),
                               child: Text(
                                 'A',
-                                style: TextStyle(fontSize: 14.sp, color: Colors.white),
+                                style: TextStyle(
+                                  fontSize: 14.sp, 
+                                  color: Colors.white,
+                                ),
                                 textAlign: TextAlign.center,
                               ),
                             ),

@@ -69,8 +69,8 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
           boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
-            blurRadius:2,
-            spreadRadius:2,
+            blurRadius:1,
+            spreadRadius:1,
           ),
         ],
         ),
@@ -80,7 +80,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
             // Indicator for the selected icon
             Container(
               color: Colors.white,
-              padding: const EdgeInsets.symmetric(vertical: 2.0), // Reduced padding
+              padding: const EdgeInsets.symmetric(vertical: 1.0), 
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: List.generate(4, (index) {
